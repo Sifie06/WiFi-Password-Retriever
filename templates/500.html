@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Server Error - WiFi Password Retriever{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-6 mx-auto text-center">
+        <div class="card shadow">
+            <div class="card-body">
+                <h1 class="display-1 text-danger">500</h1>
+                <h2>Internal Server Error</h2>
+                <p class="lead">Something went wrong on our end.</p>
+                <p>Please try again later or contact support if the problem persists.</p>
+                <a href="{{ url_for('index') }}" class="btn btn-primary">
+                    <i class="fas fa-home"></i> Go Home
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
